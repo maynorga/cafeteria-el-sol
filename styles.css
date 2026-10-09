@@ -1,0 +1,157 @@
+body {
+    background-color: aquamarine;
+    font-family: Georgia;
+    padding: 100px;
+
+}
+
+<!--etiqueta-->
+h1{
+    color: rgb(7, 7, 182);
+    font-size: 50px;
+    font-family: Helvetica;
+    text-align: center;
+    padding: 50px;
+    }
+ p{
+    color: green;
+    font-size: 20px;
+    font-family: Arial;
+    text-align: center;
+    padding: 50px;
+ }
+
+<!--clase-->
+.destacado {
+    color: rgba(183, 182, 122, 0.642);
+    font-size: 30px;
+    text-align: left;
+    padding: 50px;
+}
+
+<!--id-->
+#titulo-principal{
+    color: rgb(19, 161, 193);
+    font-size: 30px;
+    text-align: left;
+    padding: 50px;
+}
+
+nav {
+    a:hover {
+        color:black;
+    }
+    input:focus {
+        border-color: #ff4b12;
+        outline: none;
+    }
+
+    background-color: rgb(9, 204, 204);
+    padding-top: 10px; /*ajusta el espacio de relleno segun tus necesidades **/
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: center;
+    justify-content: center; /*centra los elementos del menu horizontalmente */
+    Position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+table {
+    width: 100%; /*ajusta el ancho de la tabla al 100% del contenido*/
+    border-collapse: collapse; /*separa los bordes de las celdas*/
+    margin-top: 20px;
+    border: 3px;
+    padding: 100px;
+    background-color:brown;
+    text-align: center;
+}
+
+td, th {
+    border: 3px solid black;
+    padding: 12px; /*el padding contiene el contenido de las celdas*/
+    text-align: left;
+}
+
+th{
+    background-color: solid #cccccc; 
+    color:rgb(55, 221, 136);
+}
+
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #dcecff;
+}
+
+.contenedor-contacto {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+.formulario-contacto {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+.campo input: focus,
+.campo textarea: focus {
+    border-color: #ff4b12;
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 75, 18, 0.35);
+}
+
+.botones {
+    display: flex;
+    gap:  10px;
+}
+
+button {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button: hover{
+    background-color: #ff4b12;
+}
+
+button: active {
+    transform: scale (0.97);
+}
+
+.boton-secundario {
+    background-color: #6c757d;
+}

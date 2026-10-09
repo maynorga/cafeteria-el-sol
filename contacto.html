@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css"> <!--Vinculación a una hoja de estilos-->
+  </head>
+<body>
+  <header>
+    <h1>Contacto de "CAFETERÍA EL SOL"</h1>  
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="horarios.html">Horarios</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="informacion.html">Información</a>
+    </nav>
+    <p>Los mejores cafés y postres en un ambiente acogedor</p> 
+  <p class="destacado">Más que un café</p>
+  </header> 
+
+<main class="contenedor-contacto">
+  <form class ="formulario-contacto" id= "miformulario">
+<h2>Formulario de contacto</h2>
+<p>Completa los datos para enviarnos tu consulta</p>
+
+<div class="campo"> <!--Un div es un contenedor de información-->
+        <label for="nombre">Ingresa tu nombre:</label> <!--un label es el que muestra la información de lo que se debe ingresar en el input-->
+        <input type="text" id="nombre" name="nombre"
+          placeholder="Ingresa tu nombre" required> <!--un input recibe la información-->
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Ingresa tu número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"
+          placeholder="Ingresa tu número" required>
+      </div>
+
+      <div class="campo">
+        <label for="correo">Ingresa tu correo electrónico</label>
+        <input type="email" id="correo" name="correo"
+        placeholder="Ingresa tu correo" required>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5"
+        placeholder="Ingresa tu mensaje" required></textarea>
+      </div>
+
+      <div class="botones">
+        <button type="submit">Enviar</button>
+        <button type="reset" class="boton-secundario">Limpiar</button>
+
+
+
+      </div>
+    
+    <p id="respuesta" class="mensaje" aria-live="polite"></p> <!--este es el párrafo para mostrar la respuesta-->
+
+    
+    
+    </form>
+</main>
+
+
+<!--
+<script> //recupera el elemento con un ID específico
+  document.getElementById ("miformulario").addEventListener("submit", function(evento) {
+    evento.preventDefault();
+
+    let nombre= document.getElementById("nombre").value;
+    let telefono = document.getElementById("telefono").value;
+    let correo = document.getElementById("correo").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    console.log ("Nombre ingresado: " + nombre);
+    console.log ("Teléfono ingresado: " + telefono);
+    console.log ("Correo ingresado: " + correo);
+    console.log ("Mensaje ingresado: " + mensaje);
+  });
+
+
+</script>
+-->
+
+<script>
+const formulario = document.getElementById("miformulario");
+const campoNombre = document.getElementById("nombre");
+const campoMensaje= document.getElementById("mensaje");
+const respuesta = document.getElementById("respuesta");
+
+formulario.addEventListener("submit", function (evento)
+  evento.preventDefault(); //previene el comportamiento por defecto del formulario
+const nombre = campoNombre.value.trim(); //123
+const mensaje = campoMensaje.value.trim();
+
+if(mensaje.length < 10){
+  respuesta.textContent = "El mensaje debe tener al menos 10 caracteres";
+  else {
+    const saludo = "¡Hola, " + nombre + "! Tu mensaje está listo.";
+    respuesta.textContent = 
+   }
+})
+
+
+</script>
+
+
+<br>
+<a href="https://www.facebook.com/elcafedereyes/?locale=es_LA" target="_blank"><img src="img/faceboo.png" alt="facebook" width="100" height="100"> </a>
+<br>
+</body>
+</html>
